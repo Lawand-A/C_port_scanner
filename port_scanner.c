@@ -48,9 +48,8 @@ int main(int argc, char **argv){
             count++;
             
         }
-        
-        close(0);
         port++;
+	close(0);
     }
     printf("==============================\n\nThere were %d ports open\n\n",count);
 }
