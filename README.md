@@ -10,7 +10,7 @@ $ cd C_port_scanner
 
 $ gcc port_scanner.c -o port
 
-$ ./port /server adress/
+$ ./port server adress
 
 
 <h3>Info</h3>
