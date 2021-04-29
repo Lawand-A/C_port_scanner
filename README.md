@@ -6,7 +6,7 @@
 
 $ git clone https://github.com/Lawand-A/portScanner.git
 
-$ cd portScanner
+$ cd C_port_scanner
 
 $ python3 portScanner.py -s 'put the server ip'
 
