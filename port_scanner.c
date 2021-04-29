@@ -49,7 +49,7 @@ int main(int argc, char **argv){
             
         }
         port++;
-	close(0);
+	close(sockfd);
     }
     printf("==============================\n\nThere were %d ports open\n\n",count);
 }
