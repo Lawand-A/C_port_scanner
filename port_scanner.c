@@ -18,12 +18,12 @@ void handle_error(const char *fmt, ...);
 
 
 int main(int argc, char **argv){
-	int sockfd;
-	struct sockaddr_in servaddr;
+    int sockfd;
+    struct sockaddr_in servaddr;
 
 //check the arguments
-	if(argc != 2)
-		handle_error("usage: %s <server adress>", argv[0]);
+    if(argc != 2)
+	handle_error("usage: %s <server adress>", argv[0]);
 	
 
     int port = 1;
