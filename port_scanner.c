@@ -55,23 +55,23 @@ int main(int argc, char **argv){
 }
 
 void handle_error(const char *m, ...){
-	int errno_save;
-	va_list a;
+    int errno_save;
+    va_list a;
 
-	errno_save = errno;
+    errno_save = errno;
 
-	va_start(a,m);
-	vfprintf(stdout, m, a);
-	fprintf(stdout, "\n");
-	fflush(stdout);
+    va_start(a,m);
+    vfprintf(stdout, m, a);
+    fprintf(stdout, "\n");
+    fflush(stdout);
 
-	if (errno_save != 0) {
-		fprintf(stdout, "(errno =%d) : %s\n", errno_save, strerror(errno_save));
-		fprintf(stdout, "\n");
-		fflush(stdout);
-	}
-	va_end(a);
-	exit(1);
+    if (errno_save != 0) {
+        fprintf(stdout, "(errno =%d) : %s\n", errno_save, strerror(errno_save));
+        fprintf(stdout, "\n");
+        fflush(stdout);
+    }
+    va_end(a);
+    exit(1);
 } 
 	
 	
