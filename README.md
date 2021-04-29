@@ -4,11 +4,13 @@
 
 <h3>Clone and Run</h3>
 
-$ git clone https://github.com/Lawand-A/portScanner.git
+$ git clone https://github.com/Lawand-A/C_port_scanner.git
 
 $ cd C_port_scanner
 
-$ python3 portScanner.py -s 'put the server ip'
+$ gcc port_scanner.c -o port
+
+$ ./port <server adress>
 
 
 <h3>Info</h3>
